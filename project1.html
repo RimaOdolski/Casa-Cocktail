@@ -10,24 +10,82 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <!-- <link rel="stylesheet" href="style.css" />-->
+  <!--  <link rel="stylesheet" href="project _1/style.css"/> -->
   <style>
     .hero {
-      background: url(;
+      background: url("Project1/assests/1976957.jpg") center / cover;
+    }
+
+    .title {
+      max-width: 100%;
+      height: 80px;
+      padding-top: 5px;
+    }
+
+    .notification {
+      font-size: 24px;
+      width: 500px;
+      max-width: 80%;
+      text-align: center;
+      margin: 0 auto;
+      bottom: 200px;
+    }
+
+    .control {
+      max-width: 100%;
+      padding: 20px;
+      margin-left: 60px;
     }
   </style>
+
 </head>
 
 <body>
+  <!-- To make this section disappear with Bulma use:   is-invisible-->
   <section class="hero is-fullheight">
-    
-     
-    
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered">
+        <h1 class="title is-1  has-text-danger has-background-black">Casa Cocktails</h1>
+      </div>
+    </header>
+
+    <div class="notification">
+      <h2 class="has-text-centered" style="font-weight: bolder;">NEED TO SEE SOME ID</h2>
+      <p class="one">Must be 21 to enter site</p>
+      <p class="two">Please Enter Date of Birth</p>
+
+      <div class="control">
+        <div class="select">
+          <select>
+            <option>Month</option>
+            <option class="user-month">January</option>
+            <option>February</option>
+          </select>
+        </div>
+        <div class="select">
+          <select>
+            <option>Day</option>
+            <option class="user-day">01</option>
+            <option>02</option>
+          </select>
+        </div>
+        <div class="select">
+          <select>
+            <option>Year</option>
+            <option class="user-year">2019</option>
+            <option>2020</option>
+          </select>
+        </div>
+      </div>
+    </div>
   </section>
-</body>
 
-
-</div>
+  <section class="hero is-fullheight">
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered">
+        <h1 class="title is-1  has-text-danger has-background">What is on your shelf?</h1>
+      </div>
+    </header>
 
 </body>
 
