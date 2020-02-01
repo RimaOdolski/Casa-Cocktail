@@ -42,17 +42,16 @@ for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredi
           for (var haveIngCount = 0; haveIngCount < ingredientsArr.length; haveIngCount++) {
           // var newSource = `strIngredient${reqIngCount}`;
           console.log(response3);
-
-          console.log("strI ---->" + response3.drinks[0].strIngredient+(reqIngCount+1));  //+`${reqIngCount+1}`);
-          if (ingredientsArr.includes(response3.drinks[0].strIngredient+(reqIngCount+1))) {
+          console.log("strI ---->" + response3.drinks[0]["strIngredient"+(reqIngCount+1)]);  //+`${reqIngCount+1}`);
+          if (ingredientsArr.includes(response3.drinks[0]["strIngredient"+(reqIngCount+1)]) || response3.drinks[0]["strIngredient"+(reqIngCount+1)] === null) {
             haveIngredient = true;
           } else {
             haveIngredient = false;
             break;
           }
         }
-        console.log(haveIngredient);
-        if (haveIngredient) {
+        console.log("haveIngredient ----> " + haveIngredient);
+        if (haveIngredient && canMakeDrinksArr.includes(response3.drinks[0].idDrink) !== true) {
           canMakeDrinksArr.push(response3.drinks[0].idDrink)
         }
       }
@@ -68,4 +67,8 @@ for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredi
 //   });
 
 // };
-console.log(canMakeDrinksArr);
+var intvl = setTimeout(function() { 
+      console.log("canMakeDrinksArr --->" + canMakeDrinksArr);
+}, 2000);
+
+
