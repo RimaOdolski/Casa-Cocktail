@@ -1,6 +1,11 @@
-var ingredientsArr = ["bourbon", "water", "angostura bitters", "sugar"];
+var chosenIngArr = []; //"bourbon", "water", "angostura bitters", "sugar"
 var currentIngDrnksIDArr = [];
 var canMakeDrinksArr = [];
+var alcoholChoicesArr = [];
+var mixerChoicesArr = [];
+
+
+// ingredients runs to 600 !!!!!!!!!!!!!!!!!!!!!!
 // var settings = {
 //   "url": "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list",
 //   "method": "GET",
@@ -11,10 +16,33 @@ var canMakeDrinksArr = [];
 //   console.log(response);
 // });
 
-// This will loop through the each ingredient in the ingredientsArr
-for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredientsCount++) {
+// This will populate our list of choosable ingredients for the user to choose from
+for (var i = 1; i < 605; i++) {
+  var settings = {
+    "url": `https://thecocktaildb.com/api/json/v1/1/lookup.php?iid=${i}`,
+    "method": "GET",
+    "timeout": 0,
+  };
+  
+  $.ajax(settings).done(function (response) {
+    if (Array.isArray(response.ingredients) === true) { 
+       if (response.ingredients[0].strAlcohol === null) {
+        var capCheck = response.ingredients[0].strIngredient;
+        var capChecked = capCheck.charAt(0).toUpperCase() + capCheck.substring(1);
+        mixerChoicesArr.push(capChecked);
+      } else if (response.ingredients[0].strAlcohol.toLowerCase() === "yes") {
+        var capCheck2 = response.ingredients[0].strIngredient;
+        var capChecked2 = capCheck2.charAt(0).toUpperCase() + capCheck2.substring(1);
+        alcoholChoicesArr.push(capChecked2);  
+      }
+    }
+  });
+}
+
+// This will loop through the each ingredient in the chosenIngArr
+for (var ingredientsCount = 0; ingredientsCount < chosenIngArr.length; ingredientsCount++) {
   var settings2 = {
-    "url": `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredientsArr[ingredientsCount]}`,
+    "url": `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${chosenIngArr[ingredientsCount]}`,
     "method": "GET",
     "timeout": 0,
   };
@@ -39,11 +67,11 @@ for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredi
         // console.log("response3 = "+response3);
         for (reqIngCount = 0; reqIngCount < 15 && response3.drinks[0].strIngredient+`${reqIngCount+1}` !== null; reqIngCount++) { 
           // console.log(response3.drinks[0].strIngredient+`${reqIngCount+1}`);
-          for (var haveIngCount = 0; haveIngCount < ingredientsArr.length; haveIngCount++) {
+          for (var haveIngCount = 0; haveIngCount < chosenIngArr.length; haveIngCount++) {
           // var newSource = `strIngredient${reqIngCount}`;
           console.log(response3);
           console.log("strI ---->" + response3.drinks[0]["strIngredient"+(reqIngCount+1)]);  //+`${reqIngCount+1}`);
-          if (ingredientsArr.includes(response3.drinks[0]["strIngredient"+(reqIngCount+1)]) || response3.drinks[0]["strIngredient"+(reqIngCount+1)] === null) {
+          if (chosenIngArr.includes(response3.drinks[0]["strIngredient"+(reqIngCount+1)]) || response3.drinks[0]["strIngredient"+(reqIngCount+1)] === null) {
             haveIngredient = true;
           } else {
             haveIngredient = false;
@@ -52,7 +80,7 @@ for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredi
         }
         console.log("haveIngredient ----> " + haveIngredient);
         if (haveIngredient && canMakeDrinksArr.includes(response3.drinks[0].idDrink) !== true) {
-          canMakeDrinksArr.push(response3.drinks[0].idDrink)
+          canMakeDrinksArr.push(response3.drinks[0].strDrink)
         }
       }
     });
@@ -68,7 +96,11 @@ for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredi
 
 // };
 var intvl = setTimeout(function() { 
-      console.log("canMakeDrinksArr --->" + canMakeDrinksArr);
+      // console.log("canMakeDrinksArr --->" + canMakeDrinksArr);
+      console.log("alcohol choices -------> "+alcoholChoicesArr.sort());
+      console.log("# of alcohols ------->"+ alcoholChoicesArr.length);
+      console.log("mixer choices -------> "+mixerChoicesArr.sort());
+      console.log("# of mixers -----> "+mixerChoicesArr.length);
 }, 2000);
 
 
