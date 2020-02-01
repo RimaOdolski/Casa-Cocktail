@@ -1,4 +1,4 @@
-var ingredientsArr = ["bourbon", "water", "angostura bitters"];
+var ingredientsArr = ["bourbon", "water", "angostura bitters", "sugar"];
 var currentIngDrnksIDArr = [];
 var canMakeDrinksArr = [];
 // var settings = {
@@ -40,17 +40,19 @@ for (var ingredientsCount = 0; ingredientsCount < ingredientsArr.length; ingredi
         for (reqIngCount = 0; reqIngCount < 15 && response3.drinks[0].strIngredient+`${reqIngCount+1}` !== null; reqIngCount++) { 
           // console.log(response3.drinks[0].strIngredient+`${reqIngCount+1}`);
           for (var haveIngCount = 0; haveIngCount < ingredientsArr.length; haveIngCount++) {
-          var newSource = `strIngredient${reqIngCount}`;
-          // console.log("newSource ---->" + newSource)
-          if (ingredientsArr.includes(response3.drinks[0].newSource)) {
+          // var newSource = `strIngredient${reqIngCount}`;
+          console.log(response3);
+
+          console.log("strI ---->" + response3.drinks[0].strIngredient+(reqIngCount+1));  //+`${reqIngCount+1}`);
+          if (ingredientsArr.includes(response3.drinks[0].strIngredient+(reqIngCount+1))) {
             haveIngredient = true;
           } else {
             haveIngredient = false;
             break;
           }
-          
         }
-        if (haveIngredient === true) {
+        console.log(haveIngredient);
+        if (haveIngredient) {
           canMakeDrinksArr.push(response3.drinks[0].idDrink)
         }
       }
