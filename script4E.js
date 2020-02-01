@@ -5,6 +5,27 @@ var alcoholChoicesArr = [];
 var mixerChoicesArr = [];
 
 
+var searchAlc = function(searchedStr) {
+  // if (alcoholChoicesArr.includes(searchedStr)) {
+    for (var i = 0; i < alcoholChoicesArr.length; i++) {
+      if (alcoholChoicesArr[i].toLowerCase().includes(searchedStr.toLowerCase())) {
+        // display to the DOM (possibly as a li) as a found search result
+        // MAYBE ADD A HIDING CLASS TO NON MATCHES!!!!!!!!
+      }
+    }
+  // }
+};
+
+var searchMix = function(searchedStr) {
+  for (var i = 0; i < mixerChoicesArr.length; i++) {
+    if (mixerChoicesArr[i].toLowerCase().includes(searchedStr.toLowerCase())) {
+      // display to the DOM (possibly as a li) as a found search result
+      // MAYBE ADD A HIDING CLASS TO NON MATCHES!!!!!!!!
+    }
+  }
+}
+
+// DONT THINK I NEED THIS AJAX ANYMORE
 // ingredients runs to 600 !!!!!!!!!!!!!!!!!!!!!!
 // var settings = {
 //   "url": "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list",
@@ -33,7 +54,7 @@ for (var i = 1; i < 605; i++) {
       } else if (response.ingredients[0].strAlcohol.toLowerCase() === "yes") {
         var capCheck2 = response.ingredients[0].strIngredient;
         var capChecked2 = capCheck2.charAt(0).toUpperCase() + capCheck2.substring(1);
-        alcoholChoicesArr.push(capChecked2);  
+        alcoholChoicesArr.push(capChecked2);
       }
     }
   });
@@ -96,11 +117,11 @@ for (var ingredientsCount = 0; ingredientsCount < chosenIngArr.length; ingredien
 
 // };
 var intvl = setTimeout(function() { 
-      // console.log("canMakeDrinksArr --->" + canMakeDrinksArr);
-      console.log("alcohol choices -------> "+alcoholChoicesArr.sort());
-      console.log("# of alcohols ------->"+ alcoholChoicesArr.length);
-      console.log("mixer choices -------> "+mixerChoicesArr.sort());
-      console.log("# of mixers -----> "+mixerChoicesArr.length);
+  // console.log("canMakeDrinksArr --->" + canMakeDrinksArr);
+  alcoholChoicesArr.sort();
+  mixerChoicesArr.sort();
+  console.log("alcohol choices -------> "+alcoholChoicesArr);
+  console.log("# of alcohols ------->"+ alcoholChoicesArr.length);
+  console.log("mixer choices -------> "+mixerChoicesArr);
+  console.log("# of mixers -----> "+mixerChoicesArr.length);
 }, 2000);
-
-
