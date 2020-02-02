@@ -10,25 +10,22 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <!--  <link rel="stylesheet" href="project _1/style.css"/> -->
   <style>
-    .hero {
-      background: url("Project1/assests/1976957.jpg") center / cover;
-    }
-
-    .title {
-      max-width: 100%;
-      height: 80px;
-      padding-top: 5px;
+    body {
+      padding: 0;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
     }
 
     .notification {
       font-size: 24px;
-      width: 500px;
-      max-width: 80%;
       text-align: center;
+      width: 500px;
+      max-width: 100%;
       margin: 0 auto;
-      bottom: 200px;
+      bottom: 120px;
+      box-shadow: 0 0 5px 2px;
     }
 
     .control {
@@ -36,16 +33,97 @@
       padding: 20px;
       margin-left: 60px;
     }
+
+    #cocktails {
+      background: url("assests/1976957.jpg") center / cover;
+    }
+
+    #solid {
+      background-color: black;
+    }
+
+    #image2 {
+      background: url("assests/8.jpg") center / cover;
+    }
+
+    .container {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 2px;
+      width: 600px;
+      max-width: 100%;
+      margin-top: 50px;
+      margin-bottom: 100px;
+    }
+
+    #menu {
+      background-color: white;
+      text-align: center;
+      font-size: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 2px;
+      width: 600px;
+      max-width: 100%;
+      margin-top: 150px;
+      margin-bottom: 200px;
+      padding: 10px;
+    }
+
+    h3 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: justify;
+      margin: 0 25px;
+    }
+
+    figure {
+      margin-top: 180px;
+      border-radius: 2px;
+      bottom: 100px;
+
+    }
+
+    footer {
+      height: 80px;
+      width: 600px;
+      margin: 0 auto;
+      margin-top: 10px;
+
+    }
+
+    .glow {
+      font-size: 80px;
+      color: #eee;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+    }
+
+    @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40p red, 0 0 50px red, 0 0 60p red, 0 0 70p red;
+      }
+
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px tomato, 0 0 40px tomato, 0 0 50px tomato, 0 0 60px tomato, 0 0 70px tomato, 0 0 80px tomato;
+      }
+    }
   </style>
 
 </head>
 
 <body>
-  <!-- To make this section disappear with Bulma use:   is-invisible-->
-  <section class="hero is-fullheight">
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1st~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- To make this section disappear with Bulma use:   is-invisible     -->
+  <!-- <section class="hero is-fullheight" id="cocktails">
     <header class="hero-body">
       <div class="is-overlay has-text-centered">
-        <h1 class="title is-1  has-text-danger has-background-black">Casa Cocktails</h1>
+        <h1 class="glow">Casa Cocktails</h1>
       </div>
     </header>
 
@@ -78,14 +156,74 @@
         </div>
       </div>
     </div>
-  </section>
+    <div class="has-text-centered">
+      <a href="https://www.freepik.com/free-photos-vectors/Background">Background vector created by freepik - www.freepik.com</a> 
 
-  <section class="hero is-fullheight">
-    <header class="hero-body">
-      <div class="is-overlay has-text-centered">
-        <h1 class="title is-1  has-text-danger has-background">What is on your shelf?</h1>
+    </div>
+  </section> -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3rd page display drink options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  <section class="hero is-fullheight" id="solid">
+
+    <div class=" has-text-centered">
+      <h1 class="glow" id="cocktail">Casa Cocktail Menu</h1>
+    </div>
+
+    <section>
+      <div class="container has-background-white" id="menu">
+        <h3 class="drink-title"><strong>Pick Your Poison</strong></h3>
+        <ul>
+          <li>Mexican Martini</li>
+          <li>Margarita</li>
+          <li>Tequila Sunrise</li>
+        </ul>
+
+      </div>
+    </section> -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipe~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+  <section class="hero is-fullheight" id="image2">
+    <header>
+      <div class=" has-text-centered">
+        <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
       </div>
     </header>
+    <div class="block">
+      <div class="columns">
+        <div class="column is-8">
+        <div class="container has-background-white">
+          <div class="recipe">
+            <h3><strong>Mexican Martini</strong></h3>
+            <br>
+            <p><strong>INGREDIENTS</strong></p>
+            <p class="ingredients">Tequila: 1oz</p>
+            <p>Triple Sec 1oz</p>
+            <p>Tequila: 1oz</p>
+            <p>Sprite: 1oz</p>
+            <p>Orange Juice 1oz</p>
+            <p>Olive Juice 0.5oz</p>
+            <p>Lime juice 0.5oz</p>
+            <p>
+
+            </p>
+            <br>
+            <p><strong>DIRECTIONS</strong></p>
+            <p>1. Fill shaker with ice </p>
+            <p>2. Fill shake with ingredients</p>
+            <p>3. Shake the shaker vigorously to mix ingredients</p>
+            <p>4. Pour drink into martini glass, use strainer to keep ice out of glass</p>
+            <p>5. Garnish with 3 olives on a toothpick</p>
+          </div>
+        </div>
+      </div>
+      <div class="column is-2">
+        <figure>
+          <img src="assests/mexican martini.jpg" width="200px" height="250px" alt="Mexican Martini">
+        </figure>
+      </div>
+  
+  </div>
+  </div>
+  </section>
 
 </body>
 
