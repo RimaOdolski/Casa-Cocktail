@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-
+  
   <style>
     body {
       padding: 0;
@@ -37,6 +37,30 @@
 
     #cocktails {
       background: url("assests/1976957.jpg") center / cover;
+    }
+
+    #options {
+      width: 200px;
+      max-width: 100%;
+    }
+
+    .img1 {
+      margin-left: 50px;
+    }
+   
+    .img2 {
+      margin-left: 100px;
+      margin-bottom: 50px;
+    }
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+    }
+    .control {
+      padding: 5px;
+      margin-left: 20px;
     }
 
     #solid {
@@ -93,7 +117,6 @@
       width: 600px;
       margin: 0 auto;
       margin-top: 10px;
-
     }
 
     .glow {
@@ -114,6 +137,15 @@
         text-shadow: 0 0 20px #fff, 0 0 30px tomato, 0 0 40px tomato, 0 0 50px tomato, 0 0 60px tomato, 0 0 70px tomato, 0 0 80px tomato;
       }
     }
+    #tooltip {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+ 
   </style>
 
 </head>
@@ -162,6 +194,65 @@
 
     </div>
   </section> -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd page user picks options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="hero is-fullheight" id="image2">
+    <header>
+      <div class=" has-text-centered">
+        <h1 class="glow" id="cocktail">What's on your shelf?</h1>
+      </div>
+    </header>
+    <div class="block">
+      <div class="columns">
+        <div class="column is-3">
+          <div class="container has-background-white" id="options">
+            <div class="control">
+              <label class="checkbox"> Tequila
+                <input type="checkbox">
+              </label>
+              <label class="checkbox"> Vodka
+                <input type="checkbox">
+              </label>
+              <label class="checkbox"> Gin
+                <input type="checkbox">
+              </label>
+              <label class="checkbox"> Whiskey
+                <input type="checkbox">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+         <figure>
+            <button><img class="img1" src="assests/cropped_bottle.jpg" width="100px" height="125px" alt="Liquor Bottle"></button>
+          </figure>
+        </div>
+        <div class="column is-3">
+          <figure>
+           <img class="img2" src="assests/mixer_bottle.jpg" width="90px" height="80px" alt="Mixer Bottle" />
+          </figure>
+
+        </div>
+        <div class="column is 3">
+          <div class="container has-background-white" id="options">
+            <div class="control">
+              <label class="checkbox"> Sprite
+                <input type="checkbox">
+              </label>
+              <label class="checkbox"> Lime Juice
+                <input type="checkbox">
+              </label>
+              <label class="checkbox"> Orange Juice
+                <input type="checkbox">
+              </label>
+              <label class="checkbox"> Olive Juice
+                <input type="checkbox">
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3rd page display drink options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <!--  <section class="hero is-fullheight" id="solid">
 
@@ -182,7 +273,7 @@
     </section> -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipe~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-  <section class="hero is-fullheight" id="image2">
+  <!--  <section class="hero is-fullheight" id="image2">
     <header>
       <div class=" has-text-centered">
         <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
@@ -225,7 +316,8 @@
       </div>
     </div>
   </section>
-  <script src="script4E.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script src="script4E.js"></script> -->
 </body>
 
 </html>
