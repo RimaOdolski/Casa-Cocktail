@@ -9,7 +9,7 @@ Last minute guests coming over or simply forgot to make a run to the liquor stor
  From the user's selection of drink, a detailed recipe will not only give the ingredients, but will go step by step on how to make the drink and picture of how it should look. 
  As an extra feature, a randomly generated joke (fact) will be generated to help break the ice with the user's guests.
 
-                  *** User must be 21 to enter site ***
+                    *** User must be 21 to enter site ***
 
 ## Features
   1. The user will choose the ingredients that are readily available in the home bar.
