@@ -3,9 +3,9 @@
 
 ## Introduction
 
-Last minute guests coming over or simply forgot to make a run to pickup to the liquor store? 
+Last minute guests coming over or simply forgot to make a run to the liquor store? 
 <br>
-  With the Casa Cocktail website, will have you whipping out drinks like a seasoned bartender. Simply pick the alcohol(s) and mixer(s) on hand and the website will give generate a list of cocktails. 
+  Casa Cocktail will have users whipping out drinks like a seasoned bartender. Simply pick the alcohol(s) and mixer(s) on hand and the website will give generate a list of cocktails. 
  From the user's selection of drink, a detailed recipe will not only give the ingredients, but will go step by step on how to make the drink and picture of how it should look. 
  As an extra feature, a randomly generated joke (fact) will be generated to help break the ice with the user's guests.
 
