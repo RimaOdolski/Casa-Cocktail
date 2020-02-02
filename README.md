@@ -3,7 +3,9 @@
 
 ## Introduction
 
-Last minute guests coming over or simply forgot to make a list minute run to pickup something to make drinks with?  With the Casa Cocktail website, will have you whipping out drinks like a seasoned bartender. Simply pick the alcohol(s) and mixer(s) on hand and the website will give generate a list of cocktails. 
+Last minute guests coming over or simply forgot to make a run to pickup to the liquor store? 
+<br>
+  With the Casa Cocktail website, will have you whipping out drinks like a seasoned bartender. Simply pick the alcohol(s) and mixer(s) on hand and the website will give generate a list of cocktails. 
  From the user's selection of drink, a detailed recipe will not only give the ingredients, but will go step by step on how to make the drink and picture of how it should look. 
  As an extra feature, a randomly generated joke (fact) will be generated to help break the ice with the user's guests.
 
@@ -13,7 +15,7 @@ Last minute guests coming over or simply forgot to make a list minute run to pic
   1. The user will choose the ingredients that are readily available in the home bar.
       * Click the alcohol or mixer bottle to see a list of ingredients to choose from.
   
-  2. Once the igredients are chosen 
+  2. Once the ingredients are chosen 
 
   
 
@@ -37,7 +39,7 @@ Last minute guests coming over or simply forgot to make a list minute run to pic
 
 3. Drink Menu 
 
-   ![image](assests\drink_list.jpg)
+   ![image](assests/drink_list.jpg)
 
 
 4. Recipe Page
@@ -47,7 +49,7 @@ Last minute guests coming over or simply forgot to make a list minute run to pic
 
 
 ## Badges
-The first badge will allow you to go to directly to the quiz.
+The first badge will allow you to go to directly to the website.
 
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](need to insert the github page)
 
