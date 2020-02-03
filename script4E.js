@@ -1,8 +1,10 @@
+$(document).ready( function () {
 var chosenIngArr = []; //"bourbon", "water", "angostura bitters", "sugar"
 var currentIngDrnksIDArr = [];
 var canMakeDrinksArr = [];
 var alcoholChoicesArr = [];
 var mixerChoicesArr = [];
+var jokeURL = "https://sv443.net/jokeapi/v2/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist&type=twopart";
 
 
 var searchAlc = function(searchedStr) {
@@ -125,3 +127,29 @@ var intvl = setTimeout(function() {
   console.log("mixer choices -------> "+mixerChoicesArr);
   console.log("# of mixers -----> "+mixerChoicesArr.length);
 }, 2000);
+
+
+// ajax call for random joke
+$.ajax({
+  url: jokeURL,
+  method: "GET"
+}).then(function (response) {
+
+  //creating dynamically the header
+ var jokeHeading = $("<h5 class='h5'>");
+ $(jokeHeading).append("Random Joke");
+ $("#joke").append(jokeHeading);
+
+// used for two part jokes
+var joke= $("<p class='joke-holder'>");
+var jokeOne= $("<p class='joke-holder'>");
+
+$(joke).append(response.setup);
+$(jokeOne).append(response.delivery);
+
+$("#joke").append(joke, jokeOne)
+
+});
+
+
+}); 
