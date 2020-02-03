@@ -5,68 +5,104 @@ body {
     align-items: center;
   }
 
+
+ /* Makes titles appear neon */
+  .glow {
+    font-size: 80px;
+    color: #eee;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #eee, 0 0 20px #fff, 0 0 30px red, 0 0 40p red, 0 0 50px red, 0 0 60p red, 0 0 70p red;
+    }
+
+    to {
+      text-shadow: 0 0 20px #eee, 0 0 30px tomato, 0 0 40px tomato, 0 0 50px tomato, 0 0 60px tomato, 0 0 70px tomato, 0 0 80px tomato;
+    }
+  }
+/* --------------- 1st page styling----------- */
+  /* background for page 1*/
+  #cocktails {
+    background: url("assests/1976957.jpg") center / cover;
+  }
+
+/* container */
   .notification {
     font-size: 24px;
-    text-align: center;
     width: 500px;
     max-width: 100%;
     margin: 0 auto;
     bottom: 120px;
     box-shadow: 0 0 5px 2px;
   }
-
+/* dropdowns */
   .control {
     max-width: 100%;
     padding: 20px;
     margin-left: 60px;
+    right: 50px;
+    left: 50px;
   }
 
-  #cocktails {
-    background: url("assests/1976957.jpg") center / cover;
+/* text in container */
+  .one {
+    text-align: center;
   }
+/* --------------- 2nd page styling-------------*/
 
-  #options {
+/* background for pages 2, 4 */
+#image2 {
+  background: url("assests/8.jpg") center / cover;
+}
+/* checkbox containers */
+
+  #options1 {
     width: 200px;
     max-width: 100%;
+    left: 50px;
+    right: 50px;
   }
 
-  .img1 {
-    margin-left: 50px;
+  #options2 {
+    width: 200px;
+    max-width: 100%;
+    right: 50px;
   }
- 
-  .img2 {
+
+/* checkboxes */
+#liquor-list, #mixer-list {
+  font-weight: bold;
+  margin-left: 20px;
+  padding: 5px;
+  left: 0px;
+  right: 0px;
+}
+
+  /* liquor bottle, mixer bottle */
+  .img1, .img2 {
     margin-left: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 20;
   }
 
+/* styling that makes the images act as buttons w/o the normal appearance of a button*/
   button {
     background: none;
     border: none;
     outline: none;
   }
-  .control {
-    padding: 5px;
-    margin-left: 20px;
-  }
 
+ 
+  /* -----------------------------3rd page styling--------------------------------------- */
   #solid {
     background-color: black;
   }
 
-  #image2 {
-    background: url("assests/8.jpg") center / cover;
-  }
-
-  .container {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 5px 2px;
-    width: 600px;
-    max-width: 100%;
-    margin-top: 50px;
-    margin-bottom: 100px;
-  }
-
+/* container  */
   #menu {
     background-color: white;
     text-align: center;
@@ -79,19 +115,19 @@ body {
     margin-bottom: 200px;
     padding: 10px;
   }
+/* ------------------------------4th page------------------------------ */
+.container {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 2px;
+  width: 600px;
+  max-width: 100%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
 
-  h3 {
-    font-size: 30px;
-    text-align: center;
-    margin-bottom: 5px;
-  }
 
-  p {
-    text-align: justify;
-    margin: 0 25px;
-  }
-
-  figure {
+figure {
     margin-top: 180px;
     border-radius: 2px;
     bottom: 100px;
@@ -105,24 +141,7 @@ body {
     margin-top: 10px;
   }
 
-  .glow {
-    font-size: 80px;
-    color: #eee;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-  }
-
-  @-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px red, 0 0 40p red, 0 0 50px red, 0 0 60p red, 0 0 70p red;
-    }
-
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px tomato, 0 0 40px tomato, 0 0 50px tomato, 0 0 60px tomato, 0 0 70px tomato, 0 0 80px tomato;
-    }
-  }
+  /* for popover js */
   #tooltip {
   background-color: #333;
   color: white;
