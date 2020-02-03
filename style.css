@@ -164,7 +164,7 @@ h3{
   }
   
 /* joke title */
-  h5{
+  .h5 {
     font-weight: bolder;
     font-size: 22px;
   }
@@ -172,6 +172,8 @@ h3{
 p {
   font-size: 18px;
   padding-left: 15px;
+  margin-top: 10px;
+  line-height: 2;
 
 }
 
