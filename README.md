@@ -51,7 +51,7 @@ Last minute guests coming over or simply forgot to make a run to the liquor stor
 ## Badges
 The first badge will allow you to go to directly to the website.
 
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](need to insert the github page)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail/)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
