@@ -5,7 +5,58 @@ var canMakeDrinksArr = [];
 var alcoholChoicesArr = [];
 var mixerChoicesArr = [];
 var jokeURL = "https://sv443.net/jokeapi/v2/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist&type=twopart";
+var month=["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~code for 1st page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$(".month").one("click", getDate());
+
+function getDate() {
+  for (let index = 0; index < month.length; index++) {
+    var monthArr = month[index];
+    var option = $("<option>")
+    option.append(monthArr);
+    $(".month").append(option);
+  }
+}
+//not working!!!!!
+$("#day").click(function () {
+  for (let day = 1; day <= 31; day++) {
+   var option = $("<option class='day'>")
+   option.append(day);
+   $("#day").append(day);
+  }
+})
+
+$("#year").click(function () {
+  for(let year = 1913; year <=2020 ; year++) {
+    var option = $("<option class='year'>")
+    option.append(year);
+    $("#year").append(option);
+} 
+})
+
+ //possible way to validate age
+ /*  function validateDOB(){
+    if(.value==''){
+      alert('Please select a date')
+      return false
+    }
+    var dob=.value
+    console.log(dob)
+      var today = new Date();
+      var birthDate = new Date(dob);
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+          age--;
+      }
+     if(age<21){
+        alert('You can not enter, must be above 21')
+     }
+  }
+ */
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 var searchAlc = function(searchedStr) {
   // if (alcoholChoicesArr.includes(searchedStr)) {
@@ -127,7 +178,7 @@ var intvl = setTimeout(function() {
   console.log("mixer choices -------> "+mixerChoicesArr);
   console.log("# of mixers -----> "+mixerChoicesArr.length);
 }, 2000);
-
+ */
 
 // ajax call for random joke
 $.ajax({
@@ -140,7 +191,7 @@ $.ajax({
  $(jokeHeading).append("Random Joke");
  $("#joke").append(jokeHeading);
 
-// used for two part jokes
+// for two part joke
 var joke= $("<p class='joke-holder'>");
 var jokeOne= $("<p class='joke-holder'>");
 
