@@ -11,9 +11,9 @@ $(document).ready(function () {
 
   //~~~~~~~~~~~~~~~~~~~~~~~~~code for 1st page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   $(".button").on("click", function () {
+    $(".cocktails").hide();
     $(".image2").removeClass("is-hidden");
-    $(".cocktails").addClass("is-hidden");
-
+    $(".image2").addClass("hero is-fullheight")
   });
    $(".month").one("click", getMonth());
       $(".day").one("click", getDay());
