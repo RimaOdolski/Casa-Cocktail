@@ -21,7 +21,6 @@ body {
     from {
       text-shadow: 0 0 10px #eee, 0 0 20px #fff, 0 0 30px red, 0 0 40p red, 0 0 50px red, 0 0 60p red, 0 0 70p red;
     }
-
     to {
       text-shadow: 0 0 20px #eee, 0 0 30px tomato, 0 0 40px tomato, 0 0 50px tomato, 0 0 60px tomato, 0 0 70px tomato, 0 0 80px tomato;
     }
@@ -34,27 +33,33 @@ body {
 
 /* container */
   .notification {
-   background-color: whitesmoke;
+   background-color: tomato;
+   opacity: 98%;
    font-size: 24px;
-    width: 500px;
-    height: 200px;
+   top: 200px;
+    
     max-width: 100%;
     box-shadow: 0 0 5px 2px;
     padding: 20px;
     margin: 0 auto;
   }
-/* dropdowns */
-  .control {
-    max-width: 100%;
-    padding: 10px;
-    margin-right: 50px;
-    margin-left: 90px;
-  }
-  
   .one {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+  }
+
+/* dropdowns */
+  .control {
+    display: inline;
+    max-width: 50%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .button{
+    font-size: 18px;
+    font-weight: bolder;
   }
 
 /* --------------- 2nd page styling-------------*/
@@ -66,6 +71,15 @@ body {
 /* checkbox containers */
 
   #options1 {
+    border-radius: 5px;
+    font-size: 24px;
+    background-color: whitesmoke;
+    font-size: 24px;
+     max-width: 100%;
+     margin: 0 auto;
+     bottom: 200px;
+     box-shadow: 0 0 5px 2px;
+     padding: 20px;s: 5px;
     width: 200px;
     max-width: 100%;
     left: 180px;
@@ -73,9 +87,18 @@ body {
   }
 
   #options2 {
+    font-size: 24px;
+  background-color: whitesmoke;
+  font-size: 24px;
+   max-width: 100%;
+   margin: 0 auto;
+   bottom: 200px;
+   box-shadow: 0 0 5px 2px;
+   padding: 20px;
+    border-radius: 5px;
     width: 200px;
     max-width: 100%;
-    right: 120px;
+    right: 200px;
   }
 
 /* checkboxes */
@@ -100,7 +123,6 @@ body {
     border: none;
     outline: none;
   }
- 
   /* -----------------------------3rd page styling--------------------------------------- */
   #solid {
     background-color: black;
