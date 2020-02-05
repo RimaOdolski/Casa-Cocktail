@@ -211,7 +211,13 @@ $(document).ready(function () {
     console.log("# of alcohols ------->" + alcoholChoicesArr.length);
     console.log("mixer choices -------> " + mixerChoicesArr);
     console.log("# of mixers -----> " + mixerChoicesArr.length);
-  }, 5000);
+    for (var i = 0; i < alcoholChoicesArr.length; i++) {
+      $("#liquor-list").append(`<input type="checkbox" name="ing" value="${alcoholChoicesArr[i]}">${alcoholChoicesArr[i]}<br>`)
+    };
+    for (var i = 0; i < mixerChoicesArr.length; i++) {
+      $("#mixer-list").append(`<input type="checkbox" name="ing" value="${mixerChoicesArr[i]}">${mixerChoicesArr[i]}<br>`)
+    };
+  }, 2000);
 
 
   //ajax call for random joke
