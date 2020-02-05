@@ -15,7 +15,16 @@ $(document).ready(function () {
     $(".image2").removeClass("is-hidden");
     $(".image2").addClass("hero is-fullheight")
   });
-   $(".month").one("click", getMonth());
+
+  $("#user-submit").on("click", function(){
+    $(".image2").hide();
+    $(".solid").removeClass("is-hidden");
+    $(".solid").addClass("hero is-fullheight");
+  })
+
+  
+//may use for determining if user is 21 or over
+  /*  $(".month").one("click", getMonth());
       $(".day").one("click", getDay());
       $(".year").one("click", getYear());
 
@@ -73,7 +82,7 @@ $(document).ready(function () {
         
             // date is valid
             return true;
-        }
+        } */
 
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
