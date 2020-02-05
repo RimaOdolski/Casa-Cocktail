@@ -2,28 +2,27 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Project 1</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1st page styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
- <section class="hero is-fullheight cocktails is-hidden" id="cocktails">
-    <header class="hero-body">
-      <div class="is-overlay has-text-centered">
-        <h1 class="glow">Casa Cocktails</h1>
-      </div>
-    </header>
-    <div class="container">
-      <div class="notification">
-        <!-- <h2 class="has-text-centered" style="font-weight: bolder;">NEED TO SEE SOME ID PLEASE</h2>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1st page styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <section class="hero is-fullheight cocktails" id="cocktails">
+        <header class="hero-body">
+            <div class="is-overlay has-text-centered">
+                <h1 class="glow">Casa Cocktails</h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="notification">
+                <!-- <h2 class="has-text-centered" style="font-weight: bolder;">NEED TO SEE SOME ID PLEASE</h2>
         <p class="one">Enter Date of Birth</p>
         <div class="control">
           <div class="select">
@@ -37,126 +36,125 @@
             <select class="year"></select>
           </div>
         </div> -->
-        <div>
-        <button class="button">ENTER SITE</button>
+                <div>
+                    <button class="button">ENTER SITE</button>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd page user picks options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <section class="hero is-fullheight image2" id="image2">
-    <header>
-      <div class=" has-text-centered">
-        <h1 class="glow" id="cocktail">What's on your shelf?</h1>
-      </div>
-    </header>
-    <div>
-    <button class="button" id="user-submit">SUBMIT</button>
-  </div>
-    <div class="block">
-      <div class="columns">
-        <div class="column is-3">
-          <div class="container" id="options1">
-            <div class="control" id="liquor-list">
-              <label class="checkbox"> Tequila
-                <input type="checkbox">
-              </label>
-              <label class="checkbox"> Vodka
-                <input type="checkbox">
-              </label>
-              <label class="checkbox"> Gin
-                <input type="checkbox">
-              </label>
-              <label class="checkbox"> Whiskey
-                <input type="checkbox">
-              </label>
+    <section class="hero is-fullheight image2 is-hidden" id="image2">
+        <header>
+            <div class=" has-text-centered">
+                <h1 class="glow" id="cocktail">What's on your shelf?</h1>
             </div>
-          </div>
+        </header>
+        <div>
+            <button class="button" id="user-submit">SUBMIT</button>
         </div>
-        <div class="column is-3">
-          <figure>
-            <button class="liquor"><img class="img1" src="assests/cropped_bottle.jpg" alt="Liquor Bottle"></button>
-          </figure>
-        </div>
-        <div class="column is-3">
-          <figure>
-            <button class="mixer"><img class="img2" src="assests/mixer_bottle.jpg" alt="Mixer Bottle" /></button>
-          </figure>
+        <div class="block">
+            <div class="columns">
+                <div class="column is-3">
+                    <div class="container" id="options1">
+                        <div class="control" id="liquor-list">
+                            <label class="checkbox"> Tequila
+                <input type="checkbox">
+              </label>
+                            <label class="checkbox"> Vodka
+                <input type="checkbox">
+              </label>
+                            <label class="checkbox"> Gin
+                <input type="checkbox">
+              </label>
+                            <label class="checkbox"> Whiskey
+                <input type="checkbox">
+              </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-3">
+                    <figure>
+                        <button class="liquor"><img class="img1" src="assests/cropped_bottle.jpg" alt="Liquor Bottle"></button>
+                    </figure>
+                </div>
+                <div class="column is-3">
+                    <figure>
+                        <button class="mixer"><img class="img2" src="assests/mixer_bottle.jpg" alt="Mixer Bottle" /></button>
+                    </figure>
 
-        </div>
-        <div class="column is 3">
-          <div class="container" id="options2">
-            <div class="control" id="mixer-list">
-              <label class="checkbox"> Sprite
+                </div>
+                <div class="column is 3">
+                    <div class="container" id="options2">
+                        <div class="control" id="mixer-list">
+                            <label class="checkbox"> Sprite
                 <input type="checkbox">
               </label>
-              <label class="checkbox"> Lime Juice
+                            <label class="checkbox"> Lime Juice
                 <input type="checkbox">
               </label>
-              <label class="checkbox"> Orange Juice
+                            <label class="checkbox"> Orange Juice
                 <input type="checkbox">
               </label>
-              <label class="checkbox"> Olive Juice
+                            <label class="checkbox"> Olive Juice
                 <input type="checkbox">
               </label>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-  <p class="has-text-centered">background by yingyang</p>
-  </section>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3rd page display drink options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <p class="has-text-centered">background by yingyang</p>
+    </section>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3rd page display drink options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <section class="hero is-fullheight solid is-hidden" id="solid">
 
-    <div class=" has-text-centered">
-      <h1 class="glow" id="cocktail">Casa Cocktail Menu</h1>
-    </div>
+        <div class=" has-text-centered">
+            <h1 class="glow" id="cocktail">Casa Cocktail Menu</h1>
+        </div>
 
-    <section>
-      <div class="container" id="menu">
-        <h3 class="drink-title"><strong>Pick Your Poison</strong></h3>
-        <ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-          
-          <li>Mexican Martini</li>
-          <li>Margarita</li>
-          <li>Tequila Sunrise</li>
-        </ul>
+        <section>
+            <div class="container" id="menu">
+                <h3 class="drink-title"><strong>Pick Your Poison</strong></h3>
+                <ul>
+                    <li>Mexican Martini</li>
+                    <li>Margarita</li>
+                    <li>Tequila Sunrise</li>
+                </ul>
 
-      </div>
-    </section>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <section class="hero is-fullheight page-four is-hidden" id="image2">
-    <header>
-      <div class=" has-text-centered">
-        <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
-      </div>
-    </header>
-  <div class="tile is-ancestor">
-    <div class="tile is-4 is-vertical is-parent">
-      <div class="tile is-child box has-background-dark">
-       <figure>
-         <img class="drink-img" src="assests/mexican martini.jpg" alt="drink image">
-       </figure>
-        
-      </div>
-      <div class="tile is-child box" id="joke">
+            </div>
+        </section>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <section class="hero is-fullheight page-four is-hidden" id="image2">
+            <header>
+                <div class=" has-text-centered">
+                    <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
+                </div>
+            </header>
+            <div class="tile is-ancestor">
+                <div class="tile is-4 is-vertical is-parent">
+                    <div class="tile is-child box has-background-dark">
+                        <figure>
+                            <img class="drink-img" src="assests/mexican martini.jpg" alt="drink image">
+                        </figure>
 
-      </div>
-    </div>
-    <div class="tile is-parent" id="recipe">
-      <div class="tile is-child box">
-        <h3>Mexican Martini</h3>
-        <h4>Ingredients:</h4>
-        <p>Tequila</p>
-        <p>Triple Sec</p>
-        <h4>Directions:</h4>
-        <p>1. Put ice in shaker</p>
-      </div>
-    </div>
-  </div>
-</section>
-    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-    <script src="script4E.js"></script>
+                    </div>
+                    <div class="tile is-child box" id="joke">
+
+                    </div>
+                </div>
+                <div class="tile is-parent" id="recipe">
+                    <div class="tile is-child box">
+                        <h3>Mexican Martini</h3>
+                        <h4>Ingredients:</h4>
+                        <p>Tequila</p>
+                        <p>Triple Sec</p>
+                        <h4>Directions:</h4>
+                        <p>1. Put ice in shaker</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+        <script src="script4E.js"></script>
 </body>
 
 </html>
