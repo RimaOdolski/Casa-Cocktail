@@ -87,22 +87,22 @@ $(document).ready(function () {
             return Math.floor(yearDiff);
           }
 
-        
+        // This below section I am not sure what is it for. I did not need it to select the dates or verify age/date input. 
             // check date is valid
-            var date = new Date();
-            date.setFullYear(ddlYear.val(), ddlMonth.val() - 1, ddlDay.val());
-            var inputDate = ddlYear.val() + "-" + (ddlMonth.val() - 1) + "-" + ddlDay.val();
-            var parsedDate = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
-            // the parsed date will only match the input date if the input date is valid
-            if (inputDate != parsedDate)
-            {
-                alert("date is invalid!");
-                return false;
-            }
+        //     var date = new Date();
+        //     date.setFullYear(ddlYear.val(), ddlMonth.val() - 1, ddlDay.val());
+        //     var inputDate = ddlYear.val() + "-" + (ddlMonth.val() - 1) + "-" + ddlDay.val();
+        //     var parsedDate = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDate();
+        //     // the parsed date will only match the input date if the input date is valid
+        //     if (inputDate != parsedDate)
+        //     {
+        //         alert("date is invalid!");
+        //         return false;
+        //     }
         
-            // date is valid
-            return true;
-        } 
+        //     // date is valid
+        //     return true;
+        // } 
 
   //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -262,4 +262,4 @@ $(document).ready(function () {
 
   // });
 
-)
+        })

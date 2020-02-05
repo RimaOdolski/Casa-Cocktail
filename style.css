@@ -9,8 +9,8 @@ body {
 /* Makes titles appear neon */
 
 .glow {
-    font-size: 80px;
-    color: #eee;
+    font-size: 100px;
+    color:beige ;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -33,8 +33,11 @@ body {
 /* background for page 1*/
 
 #cocktails {
-    background: url("assests/1976957.jpg") center / cover;
+    background: url("assests/background_edited.jpg") center / cover;
+
 }
+
+
 
 
 /* container */
@@ -254,4 +257,13 @@ p {
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 13px;
+}
+
+#enterButton {
+
+    margin-top:5px;
+}
+
+#mainTitle {
+ font-size: 200px !important;
 }
