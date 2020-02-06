@@ -165,6 +165,12 @@ iframe {
     bottom: 20px !important;
 }
 
+.popover-body {
+    font-size: 26px;
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: brown;
+}
 
 /* styling that makes the images act as buttons w/o the normal appearance of a button*/
 button {

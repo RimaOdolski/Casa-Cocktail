@@ -85,6 +85,11 @@ $(document).ready(function () {
       $(".image2").addClass("hero is-fullheight")
     }
 
+
+    //popover for 2nd page mixer/liquor bottles
+    $('.liquor').popover({ content: "Alcohol", placement:"left", animation: true}); 
+    $('.mixer').popover({content: "Mixer", placement:"right", animation: true}); 
+
     for (var i = 0; i < alcoholChoicesArr.length; i++) {
       $("#liquor-list").append(`<input type="checkbox" name="ing" value="${alcoholChoicesArr[i]}">${alcoholChoicesArr[i]}<br>`)
     };
