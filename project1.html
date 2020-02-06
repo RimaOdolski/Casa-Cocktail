@@ -2,151 +2,174 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project 1</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="moment.js"></script>
-    <script> moment().format(); </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="moment.js"></script>
+  <script>
+    moment().format();
+  </script>
 
 </head>
 
 <body>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1st page styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <section class="hero is-fullheight cocktails" id="cocktails">
-        <header class="hero-body">
-            <div class="is-overlay has-text-centered">
-                <h1 class="glow" id="mainTitle">Casa Cocktails</h1>
-            </div>
-        </header>
-        <div class="container">
-            <div class="notification glow">
-                 <h2 class="has-text-centered" style="font-weight: bolder;">YOU MUST BE AT LEAST 21 YEARS OF AGE TO ENTER</h2>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~1st page styling ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="hero is-fullheight cocktails" id="cocktails">
+    <header class="hero-body">
+      <div class="is-overlay has-text-centered">
+        <h1 class="glow" id="mainTitle">Casa Cocktails</h1>
+      </div>
+    </header>
+    <div class="container">
+      <div class="notification glow">
+        <h2 class="has-text-centered" style="font-weight: bolder;">NEED TO SEE SOME ID PLEASE</h2>
         <p class="one">Enter Your Date of Birth</p>
         <div class="control">
           <div class="select">
             <select class="month">
             </select>
-          </div> 
+          </div>
           <div class="select">
             <select class="day"></select>
           </div>
           <div class="select">
             <select class="year"></select>
           </div>
-        </div> 
-                <div class="has-text-centered">
-                    <button type="submit" class="button" id="enterButton">ENTER </button>
-                </div>
-            </div>
         </div>
+        <div class="has-text-centered">
+          <button type="submit" class="button" id="enterButton">ENTER </button>
+        </div>
+        <div class="modal no-date">
+          <div class="modal-background">
+            <div class="modal-content is-hidden date-alert">
+              <h1>BIRTH DATE MUST BE ENTERED</h1>
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        <div class="modal age-modal">
+          <div class="modal-background">
+            <div class="modal-content is-hidden age-alert">
+              <h1>SORRY MUST BE 21 TO ENTER SITE</h1>
+            </div>
+          </div>
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd page user picks options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="hero is-fullheight image2 is-hidden" id="image2">
+    <header>
+      <div class=" has-text-centered">
+        <h1 class="glow" id="cocktail">What's on your shelf?</h1>
+      </div>
+    </header>
+    <div>
+      <button class="button" id="user-submit">SUBMIT</button>
+    </div>
+    <div class="block">
+      <div class="columns">
+        <div class="column is-3">
+          <div class="container" id="options1">
+            <div class="control" id="liquor-list">
+
+            </div>
+          </div>
+        </div>
+        <div class="column is-3">
+          <figure>
+            <button class="liquor"><img class="img1" src="assests/cropped_bottle.jpg" alt="Liquor Bottle"></button>
+          </figure>
+        </div>
+        <div class="column is-3">
+          <figure>
+            <button class="mixer"><img class="img2" src="assests/mixer_bottle.jpg" alt="Mixer Bottle" /></button>
+          </figure>
+
+        </div>
+        <div class="column is-3">
+          <div class="container" id="options2">
+            <div class="control" id="mixer-list">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="has-text-centered">background by yingyang</p>
+  </section>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3rd page display drink options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <section class="hero is-fullheight solid is-hidden" id="solid">
+
+    <div class=" has-text-centered">
+      <h1 class="glow" id="cocktail">Casa Cocktail Menu</h1>
+    </div>
+
+    <section>
+      <div class="container" id="menu">
+        <h3 class="drink-title"><strong>Pick Your Poison</strong></h3>
+        <ul class="theMakeables">
+          <div id="noDrink">
+            <p>Sorry, we don't know of any drinks that can be made with what you've got...</p><iframe
+              src="https://giphy.com/embed/3oz8xrecHJXx85kgKI" width="480" height="360" frameBorder="0"
+              class="giphy-embed" allowFullScreen></iframe>
+            <p><a href="https://giphy.com/gifs/red-fang-3oz8xrecHJXx85kgKI">via GIPHY</a></p>
+          </div>
+        </ul>
+
+      </div>
     </section>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~2nd page user picks options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <section class="hero is-fullheight image2 is-hidden" id="image2">
-        <header>
-            <div class=" has-text-centered">
-                <h1 class="glow" id="cocktail">What's on your shelf?</h1>
-            </div>
-        </header>
-        <div>
-            <button class="button" id="user-submit">SUBMIT</button>
+  </section>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+  <section class="hero is-fullheight page-four is-hidden" id="image2">
+    <header>
+      <div class=" has-text-centered">
+        <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
+      </div>
+    </header>
+    <div class="tile is-ancestor">
+      <div class="tile is-4 is-vertical is-parent">
+        <div class="tile is-child box has-background-dark">
+          <figure>
+            <img id="drink-img" alt="drink image">
+          </figure>
+
         </div>
-        <div class="block">
-            <div class="columns">
-                <div class="column is-3">
-                    <div class="container" id="options1">
-                        <div class="control" id="liquor-list">
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="column is-3">
-                    <figure>
-                        <button class="liquor"><img class="img1" src="assests/cropped_bottle.jpg" alt="Liquor Bottle"></button>
-                    </figure>
-                </div>
-                <div class="column is-3">
-                    <figure>
-                        <button class="mixer"><img class="img2" src="assests/mixer_bottle.jpg" alt="Mixer Bottle" /></button>
-                    </figure>
+        <div class="tile is-child box" id="joke">
 
-                </div>
-                <div class="column is-3">
-                    <div class="container" id="options2">
-                        <div class="control" id="mixer-list">
-                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p class="has-text-centered">background by yingyang</p>
-    </section>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~3rd page display drink options~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <section class="hero is-fullheight solid is-hidden" id="solid">
-
-        <div class=" has-text-centered">
-            <h1 class="glow" id="cocktail">Casa Cocktail Menu</h1>
         </div>
+      </div>
+      <div class="tile is-parent" id="recipeCard">
+        <div class="tile is-child box" id="recipe">
+          <h3 id="drinkName"></h3>
+          <h4>Ingredients:</h4>
+          <ul id="ingredients">
 
-        <section>
-            <div class="container" id="menu">
-                <h3 class="drink-title"><strong>Pick Your Poison</strong></h3>
-                <ul class="theMakeables">
-                  <div id="noDrink">
-                    <p>Sorry, we don't know of any drinks that can be made with what you've got...</p><iframe src="https://giphy.com/embed/3oz8xrecHJXx85kgKI" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/red-fang-3oz8xrecHJXx85kgKI">via GIPHY</a></p>
-                  </div>
-                </ul>
+          </ul>
+          <h4>Instructions</h4>
+          <ul id="instructions"></ul>
+          <div id="goBack">
+            <h4>Changed your mind? Heres what else you can make!</h4>
+            <ul class="theMakeables">
 
-            </div>
-        </section>
-      </section>
-        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-      <section class="hero is-fullheight page-four is-hidden" id="image2">
-        <header>
-          <div class=" has-text-centered">
-              <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
-          </div>
-        </header>
-        <div class="tile is-ancestor">
-          <div class="tile is-4 is-vertical is-parent">
-            <div class="tile is-child box has-background-dark">
-              <figure>
-                <img id="drink-img" alt="drink image">
-              </figure>
-
-            </div>
-            <div class="tile is-child box" id="joke">
-
-            </div>
-          </div>
-          <div class="tile is-parent" id="recipeCard">
-            <div class="tile is-child box" id="recipe">
-              <h3 id="drinkName"></h3>
-              <h4>Ingredients:</h4>
-              <ul id="ingredients">
-
-              </ul>
-              <h4>Instructions</h4>
-              <ul id="instructions"></ul>
-              <div id="goBack">
-                <h4>Changed your mind?  Heres what else you can make!</h4>
-                <ul class="theMakeables">
-
-                </ul>
-                
-              </div>
-            </div>
-            
+            </ul>
 
           </div>
         </div>
-      </section>
-        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
-        <script src="script4E.js"></script>
+
+
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script src="script4E.js"></script>
 </body>
 
 </html>
