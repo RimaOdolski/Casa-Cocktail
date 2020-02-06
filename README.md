@@ -82,6 +82,9 @@ Leandra Turner
 * Sorry Image created by: 
    
    *Red Fang* via Giphy
+
+* Popper js
+
 ### BADGES
 
 Click the badge below to go directly to website
