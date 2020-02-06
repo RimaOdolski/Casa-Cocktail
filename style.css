@@ -36,7 +36,7 @@ figure {
 /* background for page 1*/
 
 #cocktails {
-    background: url("assests/background_edited.jpg") center / cover;
+    background: url("assests/1976957.jpg") center / cover;
 
 }
 
@@ -48,7 +48,7 @@ figure {
 /* container */
 
 .notification {
-    background-color: tomato;
+    background-color: black;
     opacity: 98%;
     font-size: 24px;
     top: 200px;
