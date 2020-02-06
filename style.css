@@ -36,6 +36,18 @@ body {
 
 }
 
+#enterButton {
+    margin-top: 5px;
+}
+
+#mainTitle {
+    font-size: 200px !important;
+}
+
+#goBack {
+    margin-top: 40px;
+}
+
 
 .modal-content {
     background: tomato;
@@ -117,7 +129,7 @@ body {
 #mixer-list {
     font-weight: bold;
     margin-left: 20px;
-    padding: 5px;
+    padding: 10px;
     left: 0px;
     right: 0px;
 }
@@ -126,9 +138,9 @@ body {
 /* liquor bottle, mixer bottle */
 .img1,
 .img2 {
-    margin-left: 50px;
-    margin-top: 150px;
-    bottom: 20px;
+    margin-left: 50px !important;
+    margin-top: 150px !important;
+    bottom: 20px !important;
 }
 
 
@@ -183,20 +195,8 @@ button {
 
 h3 {
     font-weight: bolder;
-    font-size: 32px;
+    font-size: 40px;
     text-align: center;
-}
-
-
-/* drink picture */
-.drink-img {
-    display: block;
-    max-width: 100%;
-    border-radius: 5px;
-    width: 200px;
-    height: 200px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 
@@ -232,6 +232,7 @@ p {
     padding-left: 15px;
     margin-top: 10px;
     line-height: 2;
+    text-align: left;
 }
 
 
@@ -244,14 +245,3 @@ p {
     font-size: 13px;
 }
 
-#enterButton {
-    margin-top: 5px;
-}
-
-#mainTitle {
-    font-size: 200px !important;
-}
-
-#goBack {
-    margin-top: 40px;
-}

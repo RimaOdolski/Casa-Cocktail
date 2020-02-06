@@ -54,11 +54,25 @@ Leandra Turner
 
 ### RESOURCES
 
-* Opening Cocktail Background:  Created by www.freepik.com
+* Opening Cocktail Background created by:
 
-* Wooden Background: created by ***YingYang***
+     www.freepik.com
 
-* Badges for Markdown:  ***Naereen Badges:*** https://github.com/Naereen/badges
+* Wooden Background created by:
+
+  ***YingYang***
+
+* Random Joke API:  
+
+    *JokeApi* :**Author Sven Fehler**
+
+* Drink/Recipe API: 
+
+    ***TheCocktailDB***
+
+* Badges for Markdown: 
+
+    ***Naereen Badges:*** https://github.com/Naereen/badges
 
     <br>
 
@@ -66,7 +80,7 @@ Leandra Turner
 
 Click the badge below to go directly to website
 
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail/)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail/Project1)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
