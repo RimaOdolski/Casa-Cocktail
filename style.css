@@ -28,17 +28,17 @@ body {
 
 @media screen and (max-width: 600px) {
   #mainTitle {
-    font-size: 85px !important;
+    font-size: 75px !important;
   };
 
   iframe {
-    width: 302px;
-    height: 227px;
+    width: 272px;
+    height: 204px;
 
   }
 
-  #liquor-list {
-    height: 50px;
+  #options1, #options2 {
+    height: 200px;
   }
 }
 
