@@ -37,7 +37,7 @@ body {
 
   }
 
-  #liquor-list {
+  #options1, #options2 {
     height: 50px;
   }
 }
