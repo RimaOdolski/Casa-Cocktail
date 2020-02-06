@@ -28,7 +28,7 @@ body {
 
 @media screen and (max-width: 600px) {
   #mainTitle {
-    font-size: 85px !important;
+    font-size: 75px !important;
   };
 
   iframe {
