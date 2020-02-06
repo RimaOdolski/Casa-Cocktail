@@ -66,12 +66,14 @@ $(document).ready(function () {
                 ddlMonth[0].selectedIndex == 0 ||
                 ddlYear[0].selectedIndex == 0)
             {
-                alert("date is required!"); // need to replace this because alerts are not allowed in this project
+              $(".no-date").addClass("is-active");
+              $(".date-alert").removeClass("is-hidden"); // need to replace this because alerts are not allowed in this project
               
             }
             else if ( yearDiff<21) {
 
-              alert("You must be  21 or over to enter this website ");
+              $(".age-modal").addClass("is-active");
+              $(".age-alert").removeClass("is-hidden");
 
             }
             else {
@@ -383,7 +385,12 @@ $(document).ready(function () {
             console.log(yearDiff);
             return Math.floor(yearDiff);
           }
-
+          
+          $(".modal-close").on("click", function () {
+            $(".modal").removeClass("is-active");
+            $(".modal-content").addClass("is-hidden")
+          })
+        
 
         // This below section I am not sure what is it for. I did not need it to select the dates or verify age/date input. 
             // check date is valid
