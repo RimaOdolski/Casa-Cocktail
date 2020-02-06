@@ -42,6 +42,9 @@ iframe {
   height: 220px;
 }
 
+figure {
+  text-align: center;
+}
 
 
 /* ---------------------------- 1st page styling--------------------------------- */
