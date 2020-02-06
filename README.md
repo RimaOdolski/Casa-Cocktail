@@ -86,7 +86,7 @@ Leandra Turner
 
 Click the badge below to go directly to website
 
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail/project1.html)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
