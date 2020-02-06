@@ -26,6 +26,24 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+  #mainTitle {
+    font-size: 90px !important;
+  };
+
+  iframe {
+    width: 336px;
+    height: 252px;
+
+  }
+}
+
+iframe {
+  width: 336px;
+  height: 252px;
+}
+
+
 
 /* ---------------------------- 1st page styling--------------------------------- */
 
@@ -41,7 +59,7 @@ body {
 }
 
 #mainTitle {
-    font-size: 200px !important;
+    font-size: 150px;
 }
 
 #goBack {
