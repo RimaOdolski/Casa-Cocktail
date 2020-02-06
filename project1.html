@@ -95,45 +95,43 @@
         <section>
             <div class="container" id="menu">
                 <h3 class="drink-title"><strong>Pick Your Poison</strong></h3>
-                <ul>
-                    <li>Mexican Martini</li>
-                    <li>Margarita</li>
-                    <li>Tequila Sunrise</li>
-                </ul>
+                <ul id="theMakeables"></ul>
 
             </div>
         </section>
+      </section>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~4th page Display drink recipes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <section class="hero is-fullheight page-four is-hidden" id="image2">
-            <header>
-                <div class=" has-text-centered">
-                    <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
-                </div>
-            </header>
-            <div class="tile is-ancestor">
-                <div class="tile is-4 is-vertical is-parent">
-                    <div class="tile is-child box has-background-dark">
-                        <figure>
-                            <img class="drink-img" src="assests/mexican martini.jpg" alt="drink image">
-                        </figure>
+      <section class="hero is-fullheight page-four is-hidden" id="image2">
+        <header>
+          <div class=" has-text-centered">
+              <h1 class="glow" id="cocktail">Cocktail Recipe</h1>
+          </div>
+        </header>
+        <div class="tile is-ancestor">
+          <div class="tile is-4 is-vertical is-parent">
+            <div class="tile is-child box has-background-dark">
+              <figure>
+                <img id="drink-img" alt="drink image">
+              </figure>
 
-                    </div>
-                    <div class="tile is-child box" id="joke">
-
-                    </div>
-                </div>
-                <div class="tile is-parent" id="recipe">
-                    <div class="tile is-child box">
-                        <h3>Mexican Martini</h3>
-                        <h4>Ingredients:</h4>
-                        <p>Tequila</p>
-                        <p>Triple Sec</p>
-                        <h4>Directions:</h4>
-                        <p>1. Put ice in shaker</p>
-                    </div>
-                </div>
             </div>
-        </section>
+            <div class="tile is-child box" id="joke">
+
+            </div>
+          </div>
+          <div class="tile is-parent" id="recipeCard">
+            <div class="tile is-child box" id="recipe">
+              <h3 id="drinkName"></h3>
+              <h4>Ingredients:</h4>
+              <ul id="ingredients">
+
+              </ul>
+              <h4>Instructions</h4>
+              <ul id="instructions"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
         <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
         <script src="script4E.js"></script>
 </body>

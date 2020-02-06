@@ -5,6 +5,9 @@ body {
     align-items: center;
 }
 
+figure {
+  text-align: center;
+}
 
 /* Makes titles appear neon */
 
@@ -37,7 +40,9 @@ body {
 
 }
 
-
+#theMakeables li:hover {
+  text-decoration-line: underline;
+}
 
 
 /* container */
