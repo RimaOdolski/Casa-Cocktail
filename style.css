@@ -36,12 +36,20 @@ body {
 
 }
 
+
 .modal-content {
-    background: black;
+    background: tomato;
     color: #eeeeee;
+    font-size: 30px;
     font-weight: bolder;
+    text-align: center;
     font: 30px;
     top: 50%;
+    max-width: 40%;
+}
+
+.modal-close {
+    max-width: 20%;
 }
 
 /* container */
@@ -87,33 +95,15 @@ body {
 
 
 /* checkbox containers */
-#options1 {
-    font-size: 24px;
-    background-color: whitesmoke;
-    max-width: 100%;
-    margin: 0 auto;
-    bottom: 200px;
-    box-shadow: 0 0 5px 2px;
-    padding: 20px;
-    border-radius: 5px;
-    width: 200px;
-    max-height: 200px;
-    left: 200px;
-    overflow: scroll;
-}
-
+#options1,
 #options2 {
     font-size: 24px;
     background-color: whitesmoke;
-    max-width: 100%;
-    margin: 0 auto;
-    bottom: 200px;
-    box-shadow: 0 0 5px 2px;
-    padding: 20px;
-    border-radius: 5px;
     width: 200px;
-    max-height: 200px;
-    right: 200px;
+    max-width: 100%;
+    max-height: 300px;
+    box-shadow: 0 0 5px 2px;
+    border-radius: 5px;
     overflow: scroll;
 }
 
@@ -121,10 +111,6 @@ body {
 /* checkboxes */
 #liquor-list {
     font-weight: bold;
-    /* margin-left: 20px; */
-    /* padding: 5px; */
-    /* left: 0px; */
-    /* right: 0px; */
     -webkit-appearance: checkbox;
 }
 
@@ -140,13 +126,13 @@ body {
 /* liquor bottle, mixer bottle */
 .img1,
 .img2 {
-    margin-left: 100px;
-    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 150px;
     bottom: 20px;
 }
 
 
-/* styling that makes the images act as buttons w/o the normal appearance of a button*/ 
+/* styling that makes the images act as buttons w/o the normal appearance of a button*/
 button {
     background: none;
     border: none;
@@ -158,6 +144,9 @@ button {
     box-shadow: 0 0 5px 2px;
 }
 
+.column {
+    border: 2px solid red;
+}
 
 /* ------------------------------------------------------3rd page styling--------------------------------------- */
 
@@ -190,7 +179,9 @@ button {
 }
 
 .tile {
+    margin-right: 40px;
     margin-left: 10px;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -205,6 +196,8 @@ h3 {
     display: block;
     max-width: 100%;
     border-radius: 5px;
+    width: 200px;
+    height: 200px;
     margin-right: auto;
     margin-left: auto;
 }
