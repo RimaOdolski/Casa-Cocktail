@@ -32,13 +32,13 @@ body {
   };
 
   iframe {
-    width: 302px;
-    height: 227px;
+    width: 272px;
+    height: 204px;
 
   }
 
   #options1, #options2 {
-    height: 50px;
+    height: 200px;
   }
 }
 
