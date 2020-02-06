@@ -23,24 +23,28 @@ Casa Cocktail will have users whipping out drinks like a seasoned bartender. Sim
 
 ## PREVIEW
 
-1. Opening Page
+1. **Opening Page**
 
 ![image](assests/opening_page.jpg)
 
 <br>
 
-2. Beverage Choice Page
+2. **Beverage Choice Page**
 
+![image](assests/pick_options.jpg)
+<br>
 
-3. Drink Menu
+3. **Drink Menu**
 
 ![image](assests/pick_drink.jpg)
 
-4. Recipe Page
+4. **Recipe Page**
 
+![image](assests/drink_recipe.jpg)
 <br>
 
 ## CONTRIBUTORS
+
 
 Eric Garcia
 
@@ -73,14 +77,16 @@ Leandra Turner
 * Badges for Markdown: 
 
     ***Naereen Badges:*** https://github.com/Naereen/badges
-
     <br>
 
+* Sorry Image created by: 
+   
+   *Red Fang* via Giphy
 ### BADGES
 
 Click the badge below to go directly to website
 
-[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail/Project1)
+[![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://rimaodolski.github.io/Casa-Cocktail/project1.html)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 
