@@ -159,12 +159,34 @@ $(document).ready(function () {
                           newDrinkEl.textContent = `${response3.drinks[0].strDrink}`;
                           // console.log("resp: "+response3.drinks[0].id)
                           $(newDrinkEl).on('click', function () { 
+                            $("#joke").html("");
+                            $.ajax({
+                              url: jokeURL,
+                              method: "GET"
+                            }).then(function (response) {
+                          
+                              //creating dynamically the header
+                              var jokeHeading = $("<h5 class='h5'>");
+                              $(jokeHeading).append("Random Joke");
+                              $("#joke").append(jokeHeading);
+                          
+                              // for two part joke
+                              var joke = $("<p class='joke-holder'>");
+                              var jokeOne = $("<p class='joke-holder'>");
+                          
+                              $(joke).append(response.setup);
+                              $(jokeOne).append(response.delivery);
+                          
+                              $("#joke").append(joke, jokeOne)
+                          
+                            });
                               $("#solid").hide();
                               $(".page-four").removeClass("is-hidden");
                               $(".page-four").addClass("hero is-fullheight");
                               $("#drink-img").attr('src', `${response3.drinks[0].strDrinkThumb}/preview`);
                               console.log(response3.drinks[0].strDrinkThumb)
                               $("#drinkName").html(response3.drinks[0].strDrink);
+                              $("#ingredients").html("");
                               for (i =1; response3.drinks[0]["strIngredient"+i] !== null; i++) {
                                 var newIngLi = document.createElement('li');
                                 if (response3.drinks[0]["strMeasure"+i] !== null) {
@@ -176,9 +198,10 @@ $(document).ready(function () {
                               };
                               var newInst = document.createElement('li');
                               newInst.textContent = response3.drinks[0].strInstructions;
+                              $("#instructions").html("");
                               $("#instructions").append(newInst)
                           });
-                          $("#theMakeables").append(newDrinkEl);
+                          $(".theMakeables").append(newDrinkEl);
                           drinkCount++;
                           // <a class="indDrink" href="${response3.drinks[0].strDrinkThumb}/preview">
                         };
@@ -345,26 +368,7 @@ $(document).ready(function () {
           
           
             //ajax call for random joke
-            $.ajax({
-              url: jokeURL,
-              method: "GET"
-            }).then(function (response) {
-          
-              //creating dynamically the header
-              var jokeHeading = $("<h5 class='h5'>");
-              $(jokeHeading).append("Random Joke");
-              $("#joke").append(jokeHeading);
-          
-              // for two part joke
-              var joke = $("<p class='joke-holder'>");
-              var jokeOne = $("<p class='joke-holder'>");
-          
-              $(joke).append(response.setup);
-              $(jokeOne).append(response.delivery);
-          
-              $("#joke").append(joke, jokeOne)
-          
-            });
+            
           
           
           
@@ -377,6 +381,7 @@ $(document).ready(function () {
             console.log(yearDiff);
             return Math.floor(yearDiff);
           }
+
 
         // This below section I am not sure what is it for. I did not need it to select the dates or verify age/date input. 
             // check date is valid

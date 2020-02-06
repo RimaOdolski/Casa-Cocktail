@@ -8,6 +8,9 @@ body {
 figure {
   text-align: center;
 }
+#goBack {
+  margin-top: 40px;
+}
 
 /* Makes titles appear neon */
 
