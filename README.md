@@ -25,7 +25,7 @@ Casa Cocktail will have users whipping out drinks like a seasoned bartender. Sim
 
 1. Opening Page
 
-![image](assests\opening_page.jpg)
+![image](assests/opening_page.jpg)
 
 <br>
 
@@ -34,7 +34,7 @@ Casa Cocktail will have users whipping out drinks like a seasoned bartender. Sim
 
 3. Drink Menu
 
-![image](assests\pick_drink.jpg)
+![image](assests/pick_drink.jpg)
 
 4. Recipe Page
 
@@ -51,6 +51,7 @@ George Sun
 Leandra Turner
 
 <br>
+
 ### RESOURCES
 
 * Opening Cocktail Background:  Created by www.freepik.com
